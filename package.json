@@ -1,0 +1,23 @@
+{
+  "name": "merkdewn",
+  "version": "0.0.1",
+  "description": "markdown editor",
+  "author": "Aakash Jain",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aakashjain/merkdewn.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "2.13.x"
+  },
+  "dependencies": {
+    "chance": "^0.7.6",
+    "ejs": "^2.3.3",
+    "express": "^4.13.1",
+    "marked": "^0.3.3",
+    "redis": "^0.12.1",
+    "share": "^0.6.3"
+  }
+}

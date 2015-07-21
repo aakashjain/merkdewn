@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>merkdewn</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+
+	<div class="navbar">
+		<a class="navbar-brand" href="#">merkdewn</a>
+		<ul class="nav navbar-nav">
+			<li class="active">
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/newpad">New pad</a>
+			</li>
+			<li>
+				<a href="https://github.com/aakashjain/merkdewn">Github</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>merkdewn</h1>
+			<p>Collaborate on markdown docs</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="/newpad">Create a new pad</a>
+				<a href="https://github.com/aakashjain/merkdewn" class="btn btn-default btn-lg">Github</a>
+			</p>
+		</div>
+	</div>
+
+	<section class="row">
+		<textarea id="pad" class="col-md-6 preview">merkdewn
+========
+**Try this pad out**, or...  
+
+1. [Make a new pad](/newpad) and share the URL with your team.
+3. Collaborate and whatever. Your pad won't disappear.
+
+###Github flavored markdown yay!</textarea>
+		<div id="preview" class="col-md-6 preview"></div>
+	</section>
+
+	<script src="marked.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

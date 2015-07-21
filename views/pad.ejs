@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>merkdewn</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+
+	<div class="navbar">
+		<span class="navbar-brand">merkdewn</span>
+		<ul class="nav navbar-nav">
+			<li class="active">
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/newpad">New pad</a>
+			</li>
+			<li>
+				<a href="https://github.com/aakashjain/merkdewn">Github</a>
+			</li>
+		</ul>
+	</div>
+
+	<section class="row full-height">
+		<textarea id="pad" class="col-md-6 full-height"></textarea>
+		<div id="preview" class="col-md-6 full-height"></div>
+	</section>
+
+	<script src="marked.min.js"></script>
+	<script src="bcsocket.js"></script>
+	<script src="webclient/share.js"></script>
+	<script src="webclient/textarea.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

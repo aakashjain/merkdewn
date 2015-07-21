@@ -1,0 +1,24 @@
+html, body, .full-height {
+	height: 90%;
+}
+
+#pad {
+	font-family: Menlo, "Courier New", monospace;
+	border: 2px solid gray;
+	padding: 20px;
+	overflow: auto;
+	outline: none;
+	resize: none;
+}
+
+#preview {
+	padding: 20px;
+	overflow: auto;
+	border: 2px solid gray;
+	border-left: none;
+	background: #EEEEEE;
+}
+
+.preview {
+	height: 250px;
+}
