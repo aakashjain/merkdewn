@@ -4,7 +4,7 @@ marked.setOptions({
 });
 
 window.onload = function() {
-	var pad = document.getElementById('pad');
+	var pad = document.getElementById('editor');
 	var preview = document.getElementById('preview');
 	var path = document.location.pathname;
 

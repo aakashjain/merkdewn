@@ -1,25 +1,24 @@
-html, body, .full-height {
+html, body, .fill {
 	height: 100%;
-	width: 100%;
 }
 
-#pad {
+.index-pad {
+	height: 250px;
+}
+
+#editor {
 	font-family: Menlo, "Courier New", monospace;
 	border: 2px solid gray;
 	padding: 20px;
 	overflow: auto;
 	outline: none;
 	resize: none;
+	width: 100%;
 }
 
 #preview {
+	border: 2px solid gray;
 	padding: 20px;
 	overflow: auto;
-	border: 2px solid gray;
-	border-left: none;
 	background: #EEEEEE;
-}
-
-.preview {
-	height: 250px;
 }
