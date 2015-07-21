@@ -29,10 +29,6 @@ window.onload = function() {
 		makeHtml();
 	} else {
 		sharejs.open(path.substring(1), 'text', function(err, doc) {
-			if(err) {
-				console.log("ShareJS error: ", err);
-				return;
-			}
 			doc.attach_textarea(pad);
 			doc.on('remoteop', function(op) {
 				makeHtml();
