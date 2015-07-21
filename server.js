@@ -21,21 +21,31 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
-app.get('/:id', function(req, res) {
-	res.render('pad');
-});
-
 app.get('/newpad', function(req, res) {
 	var pad = newPad();
 	res.redirect('/' + pad);
 });
 
+app.get('/:id', function(req, res) {
+	res.render('pad');
+});
+
 var newPad = function() {
 	var pad = chance.hash({length: 25});
-	while(redis.exists('ShareJS:doc:' + pad) == 1) {
+	while(padExists(pad)) {
 		pad = chance.hash({length: 25});
 	}
 	return pad;
+}
+
+var padExists = function(pad) {
+	redis.exists('ShareJS:doc:' + pad, function(err, res) {
+		if(res === 1) {
+			return true;
+		} else {
+			return false;
+		}
+	});
 }
 
 var options = {

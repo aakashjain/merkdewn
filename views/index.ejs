@@ -4,25 +4,9 @@
 	<meta charset="UTF-8">
 	<title>merkdewn</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body class="container-fluid">
-
-	<div class="navbar">
-		<a class="navbar-brand" href="#">merkdewn</a>
-		<ul class="nav navbar-nav">
-			<li class="active">
-				<a href="/">Home</a>
-			</li>
-			<li>
-				<a href="/newpad">New pad</a>
-			</li>
-			<li>
-				<a href="https://github.com/aakashjain/merkdewn">Github</a>
-			</li>
-		</ul>
-	</div>
+<body>
 
 	<div class="jumbotron">
 		<div class="container text-center">
@@ -35,8 +19,9 @@
 		</div>
 	</div>
 
-	<section class="row">
-		<textarea id="pad" class="col-md-6 preview">merkdewn
+	<div class="container" style="padding-bottom: 10px">
+		<section class="row">
+			<textarea id="pad" class="col-md-6 preview">merkdewn
 ========
 **Try this pad out**, or...  
 
@@ -44,8 +29,9 @@
 3. Collaborate and whatever. Your pad won't disappear.
 
 ###Github flavored markdown yay!</textarea>
-		<div id="preview" class="col-md-6 preview"></div>
-	</section>
+			<div id="preview" class="col-md-6 preview"></div>
+		</section>
+	</div>
 
 	<script src="marked.min.js"></script>
 	<script src="script.js"></script>

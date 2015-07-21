@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body class="container-fluid">
+<body>
 
 	<div class="navbar">
 		<span class="navbar-brand">merkdewn</span>
 		<ul class="nav navbar-nav">
-			<li class="active">
+			<li>
 				<a href="/">Home</a>
 			</li>
 			<li>
@@ -23,10 +23,12 @@
 		</ul>
 	</div>
 
-	<section class="row full-height">
-		<textarea id="pad" class="col-md-6 full-height"></textarea>
-		<div id="preview" class="col-md-6 full-height"></div>
-	</section>
+	<div class="container">
+		<section class="row">
+			<textarea id="pad" class="col-md-6"></textarea>
+			<div id="preview" class="col-md-6"></div>
+		</section>
+	</div>
 
 	<script src="marked.min.js"></script>
 	<script src="bcsocket.js"></script>
